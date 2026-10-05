@@ -1,369 +1,78 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="port.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shoaib Aslam - Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="port.css"> 
+<script src="port.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="wrap"><nav aria-label="Main">
+    <a class="logo" href="#top">Shoaib Aslam</a>
+    <a class="l" href="#projects">Projects</a><a class="l" href="#skills">Skills</a><a class="l" href="#resume">Resume</a><a class="l" href="https://wa.me/920000000000?text=Hi%2C%20I%20saw%20your%20portfolio" target="_blank" rel="noopener">WhatsApp</a>
+    <button class="icon-btn" id="theme" type="button" aria-label="Switch to dark mode" title="Switch theme"></button>
+  </nav></div>
+</header>
 
-      <a href="#home" class="logo">Shoaib <span>Aslam</span></a> 
+<main id="top">
+<div class="wrap hero">
+  <h1>Shoaib Aslam</h1>
+  <div class="role">Software Engineer</div>
+  <p>I build fast, accessible websites with HTML, CSS and JavaScript. Replace this paragraph with two sentences about what you make and what you are looking for.</p>
+  <div class="btns">
+    <a class="btn primary" href="#projects">Projects</a>
+    <a class="btn wa" href="https://wa.me/9203010305639?text=Hi%2C%20I%20saw%20your%20portfolio" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </div>
+  <div class="facts">
+    <div class="fact"><small>Email</small><a href="mailto:shoaibaslam3815@gmail.com">Shoaibaslam3815@gmail.com</a></div>
+    <div class="fact"><small>Phone</small><a href="tel:+920000000000">+92 3010305639</a></div>
+     <div class="fact"><small>GitHub</small><a href="https://github.com/Shoaibaslam-regs?tab=repositories" target="_blank" rel="noopener">github.com/shoaib-aslam</a></div>
+    <div class="fact"><small>Location</small><span>Karachi, Pakistan</span></div>
+  </div>
+</div>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <p class="lead">A few things I have built. Each links to the live site and the code.</p>
+  <div class="grid" id="projectGrid">
+  </div>
+</div></section>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#education">Education</a>
-        <a href="#services">Services</a>
-        <a href="#favorite">Favorite</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
 
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Hi, it's </h1>
-        
-          <div class="animie">
-            <span>Shoaib</span>
-            <span>Shoaib</span>
-        </div> 
+<section id="resume"><div class="wrap">
+  <div class="res-head">
+    <div><h2>Resume</h2><p class="lead" style="margin:0">Experience and education at a glance.</p></div>
+    <a class="btn primary" href="/Resume - Shoaib Aslam.pdf" download>Download CV (PDF)</a>
+  </div>
+  <div class="resume">
+    <div><h3 style="margin-bottom:18px">Experience</h3>
+      <ul class="tl">
+        <li><b>Frontend Developer</b><span>Company Name · 2024 – Present</span><p>Built and maintained responsive pages, cut load time by 40%.</p></li>
+        <li><b>Freelance Web Developer</b><span>Self-employed · 2022 – 2024</span><p>Delivered 10+ static sites for small businesses.</p></li>
+      </ul></div>
+    <div><h3 style="margin-bottom:18px">Education</h3>
+      <ul class="tl">
+        <li><b>BS Computer Science</b><span>University Name · 2019 – 2023</span><p>Focus on web technologies and data structures.</p></li>
+        <li><b>Certificate: Responsive Web Design</b><span>Online course · 2021</span><p>HTML, CSS, accessibility and layout.</p></li>
+      </ul></div>
+  </div>
+</div></section>
 
-        <h3 class="text-animation">I'm a <span> </span></h3>
-        <p>
-          Lorem ipsum dolor sit consectetur adipisicing elit. Unde, atque! Fuga,
-          assumenda? Repellat, quasi debitis! Sed sequi unde minus totam iusto
-          pariatur dignissimos, odio nostrum reprehenderit, rerum explicabo
-          autem accusantium?
-        </p>
+<section id="skills"><div class="wrap">
+  <h2>Tech skills</h2>
+  <p class="lead">Tools I use most, with how comfortable I am in each.</p>
+  <div class="skills" id="skillGrid"></div>
+</div></section>
 
-        <div class="social-icon">
-          <a href="//wa.me/03010305639"><i class="bx bxl-whatsapp"></i></a>
-          <a href="https://github.com/Shoaibaslam-regs"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
-        </div>
+</main>
 
-        <div class="btn-group">
-          <a href="#" class="btn">Projects</a>
-          <a href="#contact" class="btn">Contact</a>
-        </div>
-      </div>
-
-      <div class="home-img">
-        <img src="./images/shoaib.jpg" alt="" />
-      </div>
-    </section>
-
-    <section class="education" id="education">
-      <h2 class="heading">Education</h2>
-
-      <div class="timeline-items">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2019</div>
-
-          <div class="timeline-content">
-            <h3>High School</h3>
-
-            <p>
-              I completed my SSC in 2019, from Royal Educational Grammar School,
-              High school is a transformative period in life, a time of growth,
-              learning, and discovery. It's where friendships are forged,
-              identities are shaped, and future paths begin to unfold. Whether
-              it's the excitement of new challenges or the thrill of big dreams,
-              high school is a journey that leaves a lasting impact on who you
-              become.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2021</div>
-
-          <div class="timeline-content">
-            <h3>College (HSC)</h3>
-
-            <p>
-              I completed intermidiate from For Men College, College is a time
-              of exploration and independence, where you dive deeper into your
-              passions and expand your horizons. It's a place where knowledge
-              meets experience, and where lifelong friendships and networks are
-              built. In college, you discover not just what you want to do, but
-              who you want to be, setting the stage for the next chapter of your
-              life.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2022</div>
-
-          <div class="timeline-content">
-            <h3>University</h3>
-
-            <p>
-              I just graduation appear from Federal Urdu University of Art,
-              Science, Technology (FUUAST), University is a vibrant crossroads
-              of ideas, cultures, and opportunities. It's where academic
-              curiosity meets real-world application, and where you refine your
-              skills and expand your worldview. University life challenges you
-              to think critically, engage deeply, and take responsibility for
-              your own path, preparing you to make meaningful contributions to
-              the world.
-            </p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2024</div>
-
-          <div class="timeline-content">
-            <h3>Job 1</h3>
-
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, iste
-              consectetur quibusdam error aliquid doloribus distinctio repellat
-              maiores velit, modi, eaque officiis nam Labore, culpa. Id maiores
-              minus magnam molestias.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services" id="services">
-      <h2 class="heading">Services</h2>
-      <div class="services-container">
-        <div class="service-box">
-          <div class="service-info">
-            <h4>UI Design</h4>
-            <p>
-              UI/UX design is the art of creating intuitive and engaging digital
-              experiences. It's about understanding the user's needs and
-              behaviors to craft interfaces that are not only visually appealing
-              but also easy to navigate. Effective UI/UX design balances
-              aesthetics with functionality, ensuring that every interaction
-              feels seamless and satisfying. It's where creativity meets
-              problem-solving, transforming complex ideas into simple,
-              user-friendly designs.
-            </p>
-          </div>
-        </div>
-        <div class="service-box">
-          <div class="service-info">
-            <h4>Frontend Development</h4>
-            <p>
-              Frontend development is the practice of building the visual and
-              interactive elements of a website or application that users
-              directly engage with. It involves using languages like HTML, CSS,
-              and JavaScript to create responsive, accessible, and dynamic
-              interfaces. Frontend developers turn design concepts into reality,
-              ensuring that web applications are not only visually appealing but
-              also functional and user-friendly. It's a blend of technical
-              skills and creativity, aimed at delivering an optimal user
-              experience through thoughtful, well-crafted code.
-            </p>
-          </div>
-        </div>
-        <div class="service-box">
-          <div class="service-info">
-            <h4>Backend Development</h4>
-            <p>
-              Backend development using Node.js, Express, and MongoDB involves
-              creating server-side applications with a focus on efficiency,
-              scalability, and flexibility.
-
-              <br />- **Node.js** provides a powerful runtime environment for
-              executing JavaScript on the server, enabling fast and scalable
-              network applications. <br />- **Express.js** is a minimal and
-              flexible web application framework for Node.js that simplifies the
-              creation of robust APIs and server-side logic. <br />- **MongoDB**
-              is a NoSQL database that stores data in a flexible, JSON-like
-              format, making it ideal for handling complex, unstructured data.
-              Together, these technologies form a cohesive stack for building
-              modern web applications, allowing developers to handle HTTP
-              requests, manage data, and create dynamic features with ease.
-            </p>
-          </div>
-        </div>
-        <div class="service-box">
-          <div class="service-info">
-            <h4>Testing</h4>
-            <p>
-              Testing is a critical phase in software development that ensures
-              applications function correctly and meet user expectations. It
-              involves systematically checking code for bugs, performance
-              issues, and usability problems. Through various methods such as
-              unit testing, integration testing, and end-to-end testing, testers
-              verify that every component works as intended and identify any
-              defects before deployment. Effective testing enhances software
-              reliability, improves user experience, and reduces the risk of
-              errors in production, contributing to a more robust and
-              trustworthy product.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials" id="favorite">
-      <div class="testimonials-box">
-        <h2 class="heading">Favorite</h2>
-
-        <div class="wrapper">
-          <div class="testimonial-item">
-            <img src="./images/imrankhan.jpg" alt="" />
-            <h2>Personality</h2>
-            <div class="ratting">
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-            </div>
-            <p>
-              Imran Khan is known for his dynamic and charismatic personality.
-              His charisma, combined with a strong sense of conviction, has made
-              him a compelling figure both in sports and politics. He is often
-              described as determined, passionate, and outspoken, with a vision
-              to reform and elevate Pakistan’s socio-political landscape. Khan’s
-              leadership style reflects his confidence and commitment to his
-              ideals, often drawing both admiration and controversy. His blend
-              of public speaking prowess, strategic thinking, and a personal
-              history of overcoming challenges contributes to his distinctive
-              and influential presence.
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="./images/bat.jpg" alt="" />
-            <h2>Sport</h2>
-            <div class="ratting">
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-            </div>
-            <p>
-              Cricket is a game where strategy meets skill, and every match
-              tells a unique story of triumph and challenge. Its rich traditions
-              and dynamic formats make it a sport that captivates and unites
-              fans around the globe, celebrating both individual brilliance and
-              team spirit.
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="./images/civic.jpg" alt="" />
-            <h2>Car</h2>
-            <div class="ratting">
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-              <i class="bx bxs-star" id="star"></i>
-            </div>
-            <p>
-              The Honda Civic stands out as a favorite for many due to its
-              perfect blend of reliability, efficiency, and stylish design. It's
-              a car that combines practicality with a fun driving experience,
-              making it a standout choice for those who value both dependability
-              and performance.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-      <form action="">
-        <div class="input-group">
-          <div class="input-box">
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Email" />
-          </div>
-          <div class="input-box">
-            <input type="number" placeholder="Number" />
-            <input type="text" placeholder="Subject" />
-          </div>
-        </div>
-
-        <div class="input-group-2">
-          <textarea
-            name=""
-            id="text"
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-          ></textarea>
-          <input type="submit" id="submit" value="Send Message" class="btn" />
-
-          <div class="social-icon" id="speak">
-            <a href="#contact"><i class="bx bx-volume-full"></i></a>Check
-            Message
-          </div>
-        </div>
-      </form>
-    </section>
-
-    <footer class="footer">
-      <div class="social">
-        <a href="//wa.me/03010305639"><i class="bx bxl-whatsapp"></i></a>
-        <a href="https://github.com/Shoaibaslam-regs"
-          ><i class="bx bxl-github"></i
-        ></a>
-        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-        <a href="#"><i class="bx bxl-twitter"></i></a>
-      </div>
-      <ul class="list">
-        <li>
-          <a href="#home">FAQ</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#home">About</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
-          <a href="#favorite">Favorite</a>
-        </li>
-      </ul>
-      <p class="copyright">© Shoaib Aslam | All Rights Reserved</p>
-    </footer>
-
-    <script src="port.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  </body>
-  <script>
-    var typed = new Typed(".text-animation span", {
-      strings: [
-        '"Frontend Developer"',
-        '"Web Designer"',
-        '"UI / UX designer"',
-        '"Backend developer"',
-        '"Software Tester"',
-      ],
-      typeSpeed: 80,
-      backDelay: 2000,
-      cursorChar: "|",
-      onComplete: function () {
-        typed.reset();
-      },
-    });
-  </script>
+<footer><div class="wrap foot"><span>© <span id="yr"></span> Your Name</span><span class="social"><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:you@example.com">Email</a></span></div></footer>
+<a class="fab" href="https://wa.me/920000000000?text=Hi%2C%20I%20saw%20your%20portfolio" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M16 3C9 3 3.3 8.600 3.300 15.600c0 2.300.6 4.400 1.700 6.300L3 29l7.300-1.900c1.800 1 3.800 1.500 5.700 1.500 7 0 12.700-5.700 12.700-12.700S23 3 16 3zm0 23.100c-1.800 0-3.600-.5-5.100-1.400l-.4-.2-4.300 1.100 1.200-4.200-.3-.4a10.400 10.400 0 1 1 8.900 5.100zm5.700-7.800c-.3-.2-1.800-.9-2.100-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.500 8.500 0 0 1-4.200-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.500 1.100 2.900 1.200 3.100 2.100 3.300 5.200 4.500c1.900.8 2.700.9 3.600.7.600-.1 1.800-.8 2.100-1.500s.3-1.300.2-1.500-.3-.3-.6-.4z"/></svg></a>
+ <img src="" alt=""> 
+</body>
 </html>
