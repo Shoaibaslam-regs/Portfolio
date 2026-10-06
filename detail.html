@@ -1,12 +1,12 @@
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>AutoMarket — Project Details</title>
- <link rel="stylesheet" href="/detail.css">
+  <title>AutoMarket — Project Case Study</title>
+
+  <link rel="stylesheet" href="/detail.css">
 </head>
 
 <body>
@@ -16,111 +16,799 @@
     <a href="index.html" class="back-btn">← Back</a>
 
     <main class="project-card">
- 
+
+      <!-- HEADER -->
+
       <header class="header">
-        <h1 class="automarket-logo">AutoMarket</h1>     
-        <p>AI-Powered Automobile Marketplace</p>
+
+        <h1 class="automarket-logo">AutoMarket</h1>
+
+        <p>
+          AI-Powered Automobile Marketplace & Rental Business Platform
+        </p>
+
+        <div class="header-tags">
+          <span>Buy</span>
+          <span>Sell</span>
+          <span>Rent</span>
+          <span>Business Management</span>
+        </div>
+
       </header>
 
 
-      <!-- Overview -->
+      <!-- OVERVIEW -->
+
       <section>
-        <h2>Project Overview</h2>
+
+        <div class="section-label">01 · Overview</div>
+
+        <h2>What is AutoMarket?</h2>
 
         <p>
-          AutoMarket is a modern automobile marketplace built for buying,
-          selling, and renting cars and bikes. The platform connects buyers,
-          sellers, vehicle owners, and renters through a single digital
-          marketplace.
+          AutoMarket is a full-stack automobile marketplace designed to bring
+          vehicle buying, selling, renting, and rental business management
+          together in one platform.
         </p>
 
-        <p style="margin-top: 12px;">
-          The platform combines vehicle listings, rental bookings,
-          AI-powered inspection, secure payments, real-time communication,
-          and <span style="background-color: #256724cc; color: rgb(185, 181, 181);">business management into one scalable system.</span>
+        <p>
+          The platform allows individual users to discover vehicles,
+          sellers to publish listings, vehicle owners to offer rentals,
+          and rental businesses to manage their vehicles, customers,
+          bookings, staff, and business operations from a dedicated
+          dashboard.
         </p>
+
+        <p>
+          The system also introduces AI-powered vehicle inspection,
+          real-time communication, role-based access, rental booking
+          management, analytics, and administrative tools.
+        </p>
+
       </section>
 
 
-      <!-- Features -->
+      <!-- PROBLEM -->
+
       <section>
-        <h2>Core Features</h2>
 
-        <div class="features">
+        <div class="section-label">02 · The Problem</div>
 
-          <div class="feature">
-            <h3>Buy & Sell Vehicles</h3>
+        <h2>What Problems Do Users Face?</h2>
+
+        <p>
+          Automobile marketplaces can make it easy to discover vehicles,
+          but the complete vehicle ownership and rental journey can still
+          involve multiple disconnected tools and manual processes.
+        </p>
+
+        <div class="problem-grid">
+
+          <div class="problem-card">
+
+            <span class="problem-number">01</span>
+
+            <h3>Buying & Selling</h3>
+
             <p>
-              Create and manage vehicle listings with images, pricing,
-              specifications, condition, and location.
+              Buyers need vehicle information, images, pricing, condition,
+              location, and direct communication before making a decision.
+              Sellers also need a simple way to publish and manage their
+              listings.
             </p>
+
           </div>
 
-          <div class="feature">
+
+          <div class="problem-card">
+
+            <span class="problem-number">02</span>
+
             <h3>Vehicle Rentals</h3>
+
             <p>
-              Owners can list vehicles for rent with daily, weekly,
-              and monthly rental options.
+              Rental owners need more than a vehicle listing. They need to
+              manage availability, rental prices, booking requests,
+              customers, deposits, and booking status.
             </p>
+
           </div>
 
-          <div class="feature">
-            <h3>AI Vehicle Inspection</h3>
+
+          <div class="problem-card">
+
+            <span class="problem-number">03</span>
+
+            <h3>Manual Rental Management</h3>
+
             <p>
-              AI-powered image analysis helps identify vehicle information
-              and inspection details from uploaded photos.
+              Small rental businesses may rely on spreadsheets, messages,
+              phone calls, or separate tools to track vehicles and
+              reservations, making it difficult to manage everything in
+              one place.
             </p>
+
           </div>
 
-          <div class="feature">
-            <h3>Advanced Search</h3>
+
+          <div class="problem-card">
+
+            <span class="problem-number">04</span>
+
+            <h3>Vehicle Condition</h3>
+
             <p>
-              Search vehicles using filters such as make, price,
-              condition, location, and listing type.
+              Buyers and renters may have difficulty understanding a
+              vehicle's condition from basic listing information and
+              photographs alone.
             </p>
+
           </div>
 
-          <div class="feature">
-            <h3>Secure Bookings</h3>
+
+          <div class="problem-card">
+
+            <span class="problem-number">05</span>
+
+            <h3>Communication</h3>
+
             <p>
-              Renters can request bookings while owners manage
-              availability and booking status.
+              Users often move between listing platforms and external
+              communication channels to ask questions, negotiate, or
+              discuss bookings.
             </p>
+
           </div>
 
-          <div class="feature">
-            <h3>Real-Time Chat</h3>
-            <p>
-              Buyers, sellers, owners, and renters can communicate
-              directly through real-time messaging.
-            </p>
-          </div>
 
-          <div class="feature">
-            <h3>Admin Dashboard</h3>
-            <p>
-              Administrators can manage users, listings, bookings,
-              revenue, and overall platform activity.
-            </p>
-          </div>
+          <div class="problem-card">
 
-          <div class="feature">
-            <h3>Business Dashboard</h3>
+            <span class="problem-number">06</span>
+
+            <h3>Business Operations</h3>
+
             <p>
-              Businesses can manage inventory, rentals, customers,
-              staff, reports, and settings.
+              Rental businesses need tools for inventory, customers,
+              employees, bookings, reports, and daily operations rather
+              than only a public vehicle listing page.
             </p>
+
           </div>
 
         </div>
+
       </section>
 
 
-      <!-- Technology -->
+      <!-- SOLUTION -->
+
       <section>
+
+        <div class="section-label">03 · The Solution</div>
+
+        <h2>How AutoMarket Solves These Problems</h2>
+
+        <p>
+          AutoMarket was designed as more than a vehicle listing website.
+          It combines the public marketplace experience with rental
+          operations and business management tools.
+        </p>
+
+        <div class="solution-list">
+
+          <div class="solution-item">
+
+            <div class="solution-icon">01</div>
+
+            <div>
+
+              <h3>One Platform for Buy, Sell & Rent</h3>
+
+              <p>
+                Users can discover vehicles for sale or rent from the same
+                marketplace. Sellers can publish vehicles for sale while
+                owners can offer vehicles with rental pricing and
+                availability.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="solution-item">
+
+            <div class="solution-icon">02</div>
+
+            <div>
+
+              <h3>Complete Rental Booking System</h3>
+
+              <p>
+                Rental owners can define daily, weekly, and monthly rates,
+                manage availability, receive booking requests, confirm or
+                reject reservations, and track the complete booking
+                lifecycle.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="solution-item">
+
+            <div class="solution-icon">03</div>
+
+            <div>
+
+              <h3>Business Management Dashboard</h3>
+
+              <p>
+                Rental businesses get a dedicated workspace where they can
+                manage vehicle inventory, rental operations, customers,
+                staff, reports, and business settings without depending
+                entirely on manual processes.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="solution-item">
+
+            <div class="solution-icon">04</div>
+
+            <div>
+
+              <h3>AI-Powered Vehicle Inspection</h3>
+
+              <p>
+                Vehicle images can be analyzed using Google Gemini Vision AI
+                to provide information about visible damage, vehicle
+                condition, and estimated market value in PKR.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="solution-item">
+
+            <div class="solution-icon">05</div>
+
+            <div>
+
+              <h3>Real-Time Communication</h3>
+
+              <p>
+                Buyers, sellers, renters, and vehicle owners can communicate
+                directly through real-time messaging with unread notifications
+                and read receipts.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="solution-item">
+
+            <div class="solution-icon">06</div>
+
+            <div>
+
+              <h3>Centralized Platform Management</h3>
+
+              <p>
+                Administrators can monitor users, listings, bookings,
+                platform activity, and analytics through a dedicated
+                management dashboard.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- RENTAL BUSINESS -->
+
+      <section>
+
+        <div class="section-label">04 · Rental Business</div>
+
+        <h2>How a Rental Business Can Use AutoMarket</h2>
+
+        <p>
+          AutoMarket is designed not only for individual vehicle owners,
+          but also for businesses that manage multiple rental vehicles.
+          A business can use the platform as a central system for managing
+          its rental operations.
+        </p>
+
+
+        <div class="business-flow">
+
+          <div class="business-step">
+
+            <div class="business-number">01</div>
+
+            <h3>Add Inventory</h3>
+
+            <p>
+              Business owners can add their vehicles to the system with
+              images, specifications, pricing, condition, and rental
+              information.
+            </p>
+
+          </div>
+
+
+          <div class="business-step">
+
+            <div class="business-number">02</div>
+
+            <h3>Set Rental Rates</h3>
+
+            <p>
+              Businesses can define daily, weekly, and monthly rental
+              pricing and configure the rental information for each
+              vehicle.
+            </p>
+
+          </div>
+
+
+          <div class="business-step">
+
+            <div class="business-number">03</div>
+
+            <h3>Manage Availability</h3>
+
+            <p>
+              Vehicle availability can be tracked so businesses can avoid
+              accepting conflicting reservations for the same vehicle.
+            </p>
+
+          </div>
+
+
+          <div class="business-step">
+
+            <div class="business-number">04</div>
+
+            <h3>Receive Bookings</h3>
+
+            <p>
+              Customers can request a vehicle for specific dates while the
+              business reviews the request and manages its booking status.
+            </p>
+
+          </div>
+
+
+          <div class="business-step">
+
+            <div class="business-number">05</div>
+
+            <h3>Manage Customers</h3>
+
+            <p>
+              Businesses can keep track of customers associated with their
+              rental operations and manage customer-related information.
+            </p>
+
+          </div>
+
+
+          <div class="business-step">
+
+            <div class="business-number">06</div>
+
+            <h3>Manage Staff</h3>
+
+            <p>
+              Business operations can include staff management so the
+              platform can support teams rather than only individual owners.
+            </p>
+
+          </div>
+
+
+          <div class="business-step">
+
+            <div class="business-number">07</div>
+
+            <h3>Monitor Reports</h3>
+
+            <p>
+              Businesses can use reports and analytics to understand their
+              rental activity and overall business performance.
+            </p>
+
+          </div>
+
+
+          <div class="business-step">
+
+            <div class="business-number">08</div>
+
+            <h3>Manage Settings</h3>
+
+            <p>
+              Business-specific settings provide a centralized place to
+              configure and manage the rental operation.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- DIFFERENTIATOR -->
+
+      <section>
+
+        <div class="section-label">05 · What Makes It Different</div>
+
+        <h2>More Than a Vehicle Marketplace</h2>
+
+        <p>
+          The main idea behind AutoMarket was to extend the traditional
+          marketplace model into a broader automobile platform.
+        </p>
+
+        <div class="comparison">
+
+          <div class="comparison-card">
+
+            <h3>Traditional Marketplace</h3>
+
+            <ul>
+              <li>Vehicle discovery</li>
+              <li>Basic listings</li>
+              <li>Search and filtering</li>
+              <li>Buyer and seller communication</li>
+              <li>Vehicle information</li>
+            </ul>
+
+          </div>
+
+
+          <div class="comparison-divider">
+            +
+          </div>
+
+
+          <div class="comparison-card highlight-card">
+
+            <h3>AutoMarket</h3>
+
+            <ul>
+              <li>Buy, sell & rent workflows</li>
+              <li>Rental booking management</li>
+              <li>Vehicle availability management</li>
+              <li>Business inventory management</li>
+              <li>Customer & staff management</li>
+              <li>Business reports</li>
+              <li>AI vehicle inspection</li>
+              <li>Real-time messaging</li>
+              <li>Admin analytics & moderation</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- CORE FEATURES -->
+
+      <section>
+
+        <div class="section-label">06 · Core Features</div>
+
+        <h2>What I Built</h2>
+
+        <div class="features">
+
+
+          <div class="feature">
+
+            <h3>Buy & Sell Vehicles</h3>
+
+            <p>
+              Users can create, manage, search, filter, and explore vehicle
+              listings with pricing, specifications, images, condition,
+              and location.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <h3>Rental Marketplace</h3>
+
+            <p>
+              Vehicle owners can publish rental vehicles with daily,
+              weekly, and monthly rates and manage rental availability.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <h3>Rental Booking Engine</h3>
+
+            <p>
+              Includes date-conflict detection, booking requests,
+              status management, deposit information, email notifications,
+              and printable booking slips.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <h3>AI Vehicle Inspection</h3>
+
+            <p>
+              Google Gemini Vision analyzes uploaded vehicle photos to
+              identify visible damage, assess condition, and estimate
+              market value.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <h3>Real-Time Chat</h3>
+
+            <p>
+              Pusher WebSockets provide real-time communication with
+              unread notifications, read receipts, and polling fallback.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <h3>Admin Dashboard</h3>
+
+            <p>
+              Administrators can manage users, listings, bookings,
+              moderation, analytics, and platform activity.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <h3>Business Dashboard</h3>
+
+            <p>
+              Rental businesses can manage inventory, rentals, customers,
+              staff, reports, and business settings.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <h3>Responsive Experience</h3>
+
+            <p>
+              The platform is designed for mobile, tablet, and desktop
+              devices with responsive layouts and user-friendly workflows.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <h3>Listing Workflow</h3>
+
+            <p>
+              A multi-step listing process helps users enter vehicle
+              information and upload images through a drag-and-drop interface.
+            </p>
+
+          </div>
+
+
+          <div class="feature">
+
+            <h3>Direct Contact</h3>
+
+            <p>
+              Users can connect through real-time chat as well as direct
+              WhatsApp and email communication.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- AUTHENTICATION -->
+
+      <section>
+
+        <div class="section-label">07 · Security & Authentication</div>
+
+        <h2>Secure Access & Role Management</h2>
+
+        <p>
+          AutoMarket uses role-based access to separate the capabilities
+          available to buyers, sellers, business users, and administrators.
+        </p>
+
+        <div class="security-grid">
+
+          <div>
+            <strong>JWT Authentication</strong>
+            <span>Secure authenticated API access</span>
+          </div>
+
+          <div>
+            <strong>Google OAuth</strong>
+            <span>Social authentication for users</span>
+          </div>
+
+          <div>
+            <strong>Protected Routes</strong>
+            <span>Restricted access to private areas</span>
+          </div>
+
+          <div>
+            <strong>Role-Based Access</strong>
+            <span>Different permissions for different users</span>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- WORKFLOW -->
+
+      <section>
+
+        <div class="section-label">08 · Platform Workflow</div>
+
+        <h2>How AutoMarket Works</h2>
+
+        <div class="workflow">
+
+          <div class="workflow-item">
+
+            <div class="number">01</div>
+
+            <div>
+              <h3>User Authentication</h3>
+
+              <p>
+                Users register or sign in and receive access according to
+                their account type and permissions.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="workflow-item">
+
+            <div class="number">02</div>
+
+            <div>
+              <h3>Vehicle Listing</h3>
+
+              <p>
+                Sellers and owners create listings with vehicle details,
+                images, pricing, condition, and location.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="workflow-item">
+
+            <div class="number">03</div>
+
+            <div>
+              <h3>Search & Discovery</h3>
+
+              <p>
+                Buyers and renters discover vehicles using search,
+                filters, categories, location, price, and condition.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="workflow-item">
+
+            <div class="number">04</div>
+
+            <div>
+              <h3>Booking & Communication</h3>
+
+              <p>
+                Renters select dates and submit booking requests while
+                users communicate directly through real-time messaging.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="workflow-item">
+
+            <div class="number">05</div>
+
+            <div>
+              <h3>Business Management</h3>
+
+              <p>
+                Businesses manage their inventory, rentals, customers,
+                staff, reports, and daily operations.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="workflow-item">
+
+            <div class="number">06</div>
+
+            <div>
+              <h3>Administration</h3>
+
+              <p>
+                Administrators monitor the marketplace, manage users,
+                listings, bookings, and platform analytics.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- TECHNOLOGY -->
+
+      <section>
+
+        <div class="section-label">09 · Technology</div>
+
         <h2>Technology Stack</h2>
 
         <div class="tech-stack">
+
           <span class="tech">Next.js</span>
           <span class="tech">React</span>
           <span class="tech">TypeScript</span>
@@ -128,90 +816,98 @@
           <span class="tech">MongoDB</span>
           <span class="tech">Mongoose</span>
           <span class="tech">NextAuth</span>
+          <span class="tech">JWT</span>
+          <span class="tech">Google OAuth</span>
           <span class="tech">Pusher</span>
-          <span class="tech">Stripe</span>
+          <span class="tech">Google Gemini Vision</span>
           <span class="tech">UploadThing</span>
           <span class="tech">Recharts</span>
           <span class="tech">Tailwind CSS</span>
-          <span class="tech">AI / Vision API</span>
+          <span class="tech">REST APIs</span>
+
         </div>
+
       </section>
 
 
-      <!-- Workflow -->
+      <!-- TECHNICAL EXPERIENCE -->
+
       <section>
-        <h2>How It Works</h2>
 
-        <div class="workflow">
+        <div class="section-label">10 · Technical Experience</div>
 
-          <div class="workflow-item">
-            <div class="number">01</div>
-            <div>
-              <h3>Authentication</h3>
-              <p>
-                Users securely register or sign in to access
-                marketplace features.
-              </p>
-            </div>
+        <h2>What I Worked With</h2>
+
+        <div class="experience-grid">
+
+          <div>
+            <strong>Frontend</strong>
+            <span>Next.js · React · TypeScript · Tailwind CSS</span>
           </div>
 
-          <div class="workflow-item">
-            <div class="number">02</div>
-            <div>
-              <h3>Vehicle Listing</h3>
-              <p>
-                Sellers and owners add vehicle details, images,
-                pricing, and availability.
-              </p>
-            </div>
+          <div>
+            <strong>Backend</strong>
+            <span>Node.js · REST APIs · Server-side logic</span>
           </div>
 
-          <div class="workflow-item">
-            <div class="number">03</div>
-            <div>
-              <h3>Search & Discovery</h3>
-              <p>
-                Buyers and renters browse vehicles using search
-                and advanced filtering.
-              </p>
-            </div>
+          <div>
+            <strong>Database</strong>
+            <span>MongoDB · Mongoose · Schema Design</span>
           </div>
 
-          <div class="workflow-item">
-            <div class="number">04</div>
-            <div>
-              <h3>Booking & Communication</h3>
-              <p>
-                Renters request bookings while users communicate
-                directly through real-time chat.
-              </p>
-            </div>
+          <div>
+            <strong>Authentication</strong>
+            <span>JWT · Google OAuth · Role-based Access</span>
           </div>
 
-          <div class="workflow-item">
-            <div class="number">05</div>
-            <div>
-              <h3>Management</h3>
-              <p>
-                Owners, businesses, and administrators manage
-                listings, bookings, customers, and platform activity.
-              </p>
-            </div>
+          <div>
+            <strong>AI</strong>
+            <span>Google Gemini Vision · Image Analysis</span>
+          </div>
+
+          <div>
+            <strong>Real-Time</strong>
+            <span>Pusher · WebSockets · Notifications</span>
+          </div>
+
+          <div>
+            <strong>File Uploads</strong>
+            <span>UploadThing · Image Management</span>
+          </div>
+
+          <div>
+            <strong>Analytics</strong>
+            <span>Recharts · Dashboard Reporting</span>
           </div>
 
         </div>
+
       </section>
 
 
-      <!-- Highlights -->
+      <!-- HIGHLIGHTS -->
+
       <section>
+
+        <div class="section-label">11 · Highlights</div>
+
         <h2>Project Highlights</h2>
 
         <div class="highlights">
 
           <div class="highlight">
             <strong>Marketplace</strong>
-            <span>Buy • Sell • Rent</span>
+            <span>Buy · Sell · Rent</span>
+          </div>
+
+          <div class="highlight">
+            <strong>Rental System</strong>
+            <span>Bookings & Availability</span>
+          </div>
+
+          <div class="highlight">
+            <strong>Business</strong>
+            <span>Inventory & Operations</span>
           </div>
 
           <div class="highlight">
@@ -221,43 +917,49 @@
 
           <div class="highlight">
             <strong>Real-Time</strong>
-            <span>Direct Communication</span>
+            <span>Chat & Notifications</span>
           </div>
 
           <div class="highlight">
-            <strong>Secure</strong>
-            <span>Authentication & Payments</span>
-          </div>
-
-          <div class="highlight">
-            <strong>Business</strong>
-            <span>Management Dashboard</span>
-          </div>
-
-          <div class="highlight">
-            <strong>Scalable</strong>
-            <span>Modern Architecture</span>
+            <strong>Admin</strong>
+            <span>Analytics & Moderation</span>
           </div>
 
         </div>
+
       </section>
 
 
-      <!-- Future -->
+      <!-- FUTURE -->
+
       <section>
-        <h2>Future Improvements</h2>
+
+        <div class="section-label">12 · Future Improvements</div>
+
+        <h2>What's Next?</h2>
 
         <p>
-          Future improvements can include mobile applications, advanced
-          AI damage detection, personalized vehicle recommendations,
-          location-based discovery, automated notifications, analytics,
-          and expanded business management tools.
+          The platform can be extended with dedicated mobile applications,
+          more advanced AI damage detection, personalized vehicle
+          recommendations, GPS and location-based discovery, automated
+          rental reminders, payment automation, advanced business
+          analytics, fleet tracking, and additional tools for large
+          rental businesses.
         </p>
+
       </section>
 
 
+      <!-- FOOTER -->
+
       <footer class="footer">
-        AutoMarket — Buy • Sell • Rent Vehicles
+
+        <strong>AutoMarket</strong>
+
+        <span>
+          Buy • Sell • Rent • Manage
+        </span>
+
       </footer>
 
     </main>

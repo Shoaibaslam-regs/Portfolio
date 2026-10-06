@@ -71,7 +71,7 @@
  .wrap {
    max-width: 1040px;
    margin: 0 auto;
-   padding: 0 20px
+   padding: 10px 20px
  }
 
  h1,
@@ -121,8 +121,12 @@
    font-weight: 800;
    text-decoration: none;
    font-size: 1.15rem;
-   margin-right: auto
- }
+   margin-right: auto;
+  }
+  .logo img{
+    border-radius: 40%;
+    height: 40px;
+  }
 
  nav a.l {
    text-decoration: none;
@@ -164,7 +168,8 @@
 
  /* hero */
  .hero {
-   padding: 88px 0 56px
+   /* padding: 88px 0 56px */
+   padding-top: 88px ;
  }
 
  .hero h1 {
