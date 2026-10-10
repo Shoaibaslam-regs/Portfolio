@@ -1,0 +1,484 @@
+/* ==============================
+   GLOBAL STYLES
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  padding: 40px 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(14, 165, 233, 0.08),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 75%,
+      rgba(6, 182, 212, 0.06),
+      transparent 35%
+    ),
+    #080a0d;
+
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+/* ==============================
+   CONTAINER
+================================ */
+
+.container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* ==============================
+   BACK BUTTON
+================================ */
+
+.back-btn {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #8b949e;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.back-btn:hover {
+  color: #38bdf8;
+}
+
+/* ==============================
+   PROJECT CARDS
+================================ */
+
+.project-card {
+
+    width: 100%;
+  position: relative;
+  margin: 0 auto;
+  /* margin-bottom: 24px; */
+  padding: 40px;
+
+  background: rgba(20, 23, 28, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(56, 189, 248, 0.18);
+}
+
+/* ==============================
+   HEADINGS
+================================ */
+
+.project-card h1 {
+  margin-bottom: 18px;
+  color: #f3f4f6;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.project-card h2 {
+  margin-bottom: 18px;
+  color: #e5e7eb;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #d1d5db;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.project-card p {
+  margin-bottom: 14px;
+  color: #8b949e;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.project-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* ==============================
+   SECTION LABELS
+================================ */
+
+.section-label {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  color: #38bdf8;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ==============================
+   LISTS
+================================ */
+
+.project-card ul {
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.project-card li {
+  padding-left: 4px;
+  margin-bottom: 12px;
+
+  color: #9ca3af;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.project-card li::marker {
+  color: #38bdf8;
+}
+
+/* ==============================
+   HEADER TAGS
+================================ */
+
+.header-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.header-tags span {
+  padding: 6px 12px;
+
+  background: rgba(56, 189, 248, 0.06);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  border-radius: 20px;
+
+  color: #7dd3fc;
+  font-size: 11px;
+}
+
+/* ==============================
+   CORE FEATURES
+================================ */
+
+#features ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+
+  padding: 0;
+  margin-top: 25px;
+
+  list-style: none;
+}
+
+#features li {
+  position: relative;
+  margin: 0;
+  padding: 20px 20px 20px 42px;
+
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+
+  color: #9ca3af;
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+#features li::before {
+  content: "✓";
+  position: absolute;
+  top: 19px;
+  left: 17px;
+
+  color: #38bdf8;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#features li:hover {
+  background: rgba(56, 189, 248, 0.04);
+  border-color: rgba(56, 189, 248, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ==============================
+   TECHNOLOGY TAGS
+================================ */
+
+.tech-tags,
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tech-tags span,
+.tech-stack span,
+.tech {
+  display: inline-block;
+  padding: 8px 13px;
+
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.13);
+  border-radius: 20px;
+
+  color: #9ca3af;
+  font-size: 13px;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.tech-tags span:hover,
+.tech-stack span:hover,
+.tech:hover {
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+/* ==============================
+   WORKFLOW
+================================ */
+
+#workflow ol {
+  counter-reset: workflow-counter;
+  padding: 0;
+  margin-top: 22px;
+  list-style: none;
+}
+
+#workflow li {
+  position: relative;
+  counter-increment: workflow-counter;
+
+  margin-bottom: 14px;
+  padding: 18px 20px 18px 58px;
+
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+}
+
+#workflow li::before {
+  content: counter(workflow-counter, decimal-leading-zero);
+
+  position: absolute;
+  top: 18px;
+  left: 18px;
+
+  color: #38bdf8;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ==============================
+   SECURITY
+================================ */
+
+#security ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#security li {
+  position: relative;
+  padding: 14px 16px 14px 40px;
+  margin-bottom: 10px;
+
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+}
+
+#security li::before {
+  content: "✓";
+  position: absolute;
+  left: 16px;
+  top: 13px;
+
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+/* ==============================
+   HIGHLIGHTS
+================================ */
+
+#highlights ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+
+  padding: 0;
+  list-style: none;
+}
+
+#highlights li {
+  margin: 0;
+  padding: 20px 15px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+}
+
+/* ==============================
+   BUSINESS MANAGEMENT
+================================ */
+
+#business-management ul {
+  padding-left: 20px;
+}
+
+#business-management li {
+  margin-bottom: 12px;
+}
+
+/* ==============================
+   OVERVIEW
+================================ */
+
+#overview {
+  border-top: 2px solid rgba(56, 189, 248, 0.35);
+}
+
+#overview h1,
+#overview h2 {
+  color: #f3f4f6;
+}
+
+/* ==============================
+   FOOTER
+================================ */
+
+.footer {
+  padding: 25px 10px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.footer strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #7dd3fc;
+  font-size: 15px;
+}
+
+.footer span {
+  color: #666d76;
+  font-size: 12px;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 700px) {
+  body {
+    padding: 25px 14px;
+  }
+
+  .project-card {
+    padding: 28px 20px;
+    margin-bottom: 18px;
+    border-radius: 17px;
+  }
+
+  .project-card h1 {
+    font-size: 27px;
+  }
+
+  .project-card h2 {
+    font-size: 21px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  #features ul {
+    grid-template-columns: 1fr;
+  }
+
+  #highlights ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tech-tags,
+  .tech-stack {
+    gap: 8px;
+  }
+
+  .tech-tags span,
+  .tech-stack span,
+  .tech {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    padding: 18px 10px;
+  }
+
+  .project-card {
+    padding: 24px 16px;
+  }
+
+  .project-card h1 {
+    font-size: 24px;
+  }
+
+  .project-card h2 {
+    font-size: 19px;
+  }
+
+  #highlights ul {
+    grid-template-columns: 1fr;
+  }
+}

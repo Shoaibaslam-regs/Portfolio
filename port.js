@@ -1,7 +1,19 @@
 const projects = [
-  {
+
+{
+    title: "Aqua-hydration",
+    date: "Oct 2026",
+    desc: "Find nearby water shops and order your filtered drinking water with ease.",
+    tags: ["Nodejs","Type", "Next.js","CSS","HTML","JavaScript"],
+    live: "https://Aqua-hydration.vercel.app/index",
+    code: "/aqua.html",
+    img:"/images/thumbnail.png",
+    c1: "#489add",
+    c2: "#3567be",
+  }, 
+    {
     title: "Automarket-pak",
-    date: "sep 2026",
+    date: "Sep 2026",
     desc: "Pakistan Based AutoMarket BUY-SALE & RENT VAHICLES.",
     tags: ["JavaScript", "Nodejs","Nextjs", "RESTAPI","MongoDB", "CSS"],
     live: "https://automarket-pak.vercel.app/",
@@ -10,8 +22,9 @@ const projects = [
     c1: "#1f6f5c",
     c2: "#0b3b4a",
   },
+
   {
-    title: "Discoount Emporium",
+    title: "Discount Emporium",
     date: "May 2026",
     desc: "discounts, verified deals, and offers at one place.",
     tags: ["Nodejs","Expressjs","Handlebars","CSS","HTML","JavaScript"],
