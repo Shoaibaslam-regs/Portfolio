@@ -63,7 +63,6 @@ const skills = {
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => document.querySelectorAll(s);
 const root = document.documentElement;
-const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const ARROW =
   '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>';
 
@@ -127,25 +126,12 @@ const io = new IntersectionObserver(
 );
 $$(".reveal").forEach((el) => io.observe(el));
 
-// cursor spotlight on project cards
-if (!reduced)
-  $$(".card").forEach((c) =>
-    c.addEventListener("pointermove", (e) => {
-      const r = c.getBoundingClientRect();
-      c.style.setProperty("--mx", e.clientX - r.left + "px");
-      c.style.setProperty("--my", e.clientY - r.top + "px");
-    }),
-  );
-
-// header state, scroll progress, active nav link
+// header state, active nav link
 const hdr = $("#hdr"),
-  bar = $("#progress"),
   navLinks = [...$$("nav a.l")];
 function onScroll() {
-  const y = scrollY,
-    max = document.documentElement.scrollHeight - innerHeight;
+  const y = scrollY;
   hdr.classList.toggle("scrolled", y > 12);
-  bar.style.transform = `scaleX(${max > 0 ? y / max : 0})`;
   let current = "";
   navLinks.forEach((a) => {
     const s = $(a.getAttribute("href"));
