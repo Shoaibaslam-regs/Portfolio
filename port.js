@@ -22,6 +22,18 @@ const projects = [
     c1: "#1f6f5c",
     c2: "#0b3b4a",
   },
+  
+    {
+      title: "Rose Atelier",
+      date: "Nov 2026",
+      desc: "Ladies Footwear Brand.",
+      tags: ["Nodejs","Nextjs","MongoDB","tailwind","TypeScript","JavaScript"],
+      live: "https://footwear-pk.vercel.app",
+      code: "/",
+      img:"/images/R’ose Atelier Luxury Fashion Banner.png",
+      c1: "#d8bd63bd",
+      c2: "#ef4469ac",
+    }, 
 
   {
     title: "Discount Emporium",
